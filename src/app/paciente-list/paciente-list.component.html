@@ -1,0 +1,24 @@
+<h2>Lista de Pacientes</h2>
+<table class= "table table-striped">
+  <thead>
+    <tr>
+      <th>Name Hash:</th>
+      <th>Sexo:</th>
+      <th>Ano de Nascimento:</th>
+      <th>Cidade:</th>
+      <th>Uf:</th>
+      <th>Pais:</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let paciente of pacientes">
+      <td>{{ paciente.nameHash }}</td>
+      <td> {{ paciente.sexo }}</td>
+      <td> {{ paciente.anoNascimento }}</td>
+      <td> {{ paciente.cidade }}</td>
+      <td> {{ paciente.uf }}</td>
+      <td> {{ paciente.pais }}</td>
+    </tr>
+  </tbody>
+</table>
