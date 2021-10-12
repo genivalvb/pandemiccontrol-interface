@@ -8,7 +8,7 @@ import { Paciente } from './paciente';
 })
 export class PacienteService {
 
-  private baseURL = "https://pandemicontrol.herokuapp.com/api/v1/pacientes/";
+  private baseURL = "https://pandemicontrol.herokuapp.com/api/v1/pacientes";
 
   constructor(private httpClient: HttpClient) { }
 
