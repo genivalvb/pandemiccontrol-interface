@@ -13,6 +13,6 @@ export class PacienteService {
   constructor(private httpClient: HttpClient) { }
 
   getPacientesList(): Observable<Paciente[]>{
-    return this.httpClient.get<Paciente[]>(`${this.baseURL}`);
+    return this.httpClient.get<Paciente[]>('${this.baseURL}');
   }
 }
