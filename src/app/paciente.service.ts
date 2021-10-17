@@ -29,6 +29,10 @@ export class PacienteService {
         );
   }
 
+  getPacienteById(id: number): Observable<Paciente>{
+    return this.httpClient.get<Paciente>(`${this.baseURL}/${id}`);
+  }
+
 
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

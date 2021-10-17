@@ -1,4 +1,18 @@
-<h1 class="text-center"> {{title}} </h1>
+<nav class="navbar mavbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="pacientes" routerLinkActive="active" class="nav-link"> Pacientes List</a>
+    </li>
+  </ul>
+</nav>
+
+<h1 class="text-center"> Interface Consumidora da API: pandemia </h1>
 <div class = "container">
-  <app-paciente-list></app-paciente-list>
+  <router-outlet></router-outlet>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved 2021 @Maua Group Univesp 2017</span>
+  </div>
+</footer>
